@@ -51,10 +51,4 @@ export class addTicketFrom {
 
     this.btnClose.addEventListener('click', this.onClickClose);
   }
-
-//   onClickClose(e) {
-//     e.preventDefault();
-//     this.form.remove();
-//     this.btnClose.removeEventListener('click', this.onClickClose);
-//   }
 }
