@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button class="btn-addTicket">
+            Добавить тикет
+        </button>
+            <div class="addForm">
+                <h4 class="addForm__title">Добавить текст</h4>
+                <form action="" class="form">
+                    <label for="">Краткое описание
+                        <input type="text" data-input="title-tasck" required>
+                    </label>
+                    <label for="">Подробное описание
+                        <input type="text" data-input="description-tasck"  required>
+                    </label>
+                    <button class="btn" data-btn="close">Отмена</button>
+                    <button class="btn" data-btn="send">Ок</button>
+                </form>
+            </div>
+        
+        <div class="list">
+        </div>
+        <div class="popup-delete">
+            <p>Вы уверены, что хотите удалить тикет? Это дейстиве не обратимо.</p>
+            <button class="btn" data-btn="popup-delete__close">Отмена</button>
+            <button class="btn" data-btn="popup-delete__send">Ок</button>
+        </div>
+        <div class="EditForm">
+            <h4 class="EditForm">Изменить тикет</h4>
+            <form class="form" action="">
+                <label for="">Краткое описание
+                    <input type="text" data-input="title-tasck-edit" required>
+                </label>
+                <label for="">Подробное описание
+                    <input type="text" data-input="description-tasck-edit" required>
+                </label>
+                <button class="btn" class="btn"data-btn="EditForm__close">Отмена</button>
+                <button class="btn" data-btn="EditForm__send">Ок</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
