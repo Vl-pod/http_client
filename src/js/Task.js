@@ -10,6 +10,7 @@ export class Task {
         <p class="title-task">${data.name}</p>
         <div class="data">${data.created}</div>
         <div>
+				
             <button class="btn btn-edit">red</button>
             <button class="btn btn-delete">delete</button>
         </div>

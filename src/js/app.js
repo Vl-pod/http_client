@@ -136,6 +136,7 @@ list.addEventListener('click', async (e) => {
       e.preventDefault();
       PopupDelete.classList.remove('active');
     });
+		
     btnSendPopupDelete.addEventListener('click', (e) => {
       e.preventDefault();
       getDeleteID(taskId);
@@ -151,6 +152,7 @@ list.addEventListener('click', async (e) => {
     const data = {
       status: check.checked,
     };
+
     postData(`https://http-server-ubns.onrender.com/api/ticket/edit/${taskId}`, data);
   }
 });

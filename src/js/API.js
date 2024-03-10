@@ -17,6 +17,7 @@ export async function postData(url = '', data = {}) {
   return await response.json();
 }
 
+
 export async function getData(url = '') {
   const response = await fetch(url, {
     method: 'GET',
@@ -29,6 +30,7 @@ export async function getData(url = '') {
     redirect: 'follow',
     referrerPolicy: 'no-referrer',
   });
+	
   return await response.json();
 }
 
