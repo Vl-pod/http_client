@@ -64,7 +64,7 @@ btnSendAddForm.addEventListener('click', (e) => {
     name: inputTitleTasck.value,
     description: inputDescription.value,
   };
-  postData('http://localhost:10000/api/ticket/create', data).then((response) => {
+  postData('http://localhost:5000/api/ticket/create', data).then((response) => {
     const task = new Task();
     const taskEl = task.createEl(response);
     list.innerHTML += taskEl;
@@ -116,7 +116,7 @@ list.addEventListener('click', async (e) => {
         name: inputTitleTasckEdit.value,
         description: inputDescriptionEdit.value,
       };
-      postData(`http://localhost:10000/api/ticket/edit/${taskId}`, data).then((response) => {
+      postData(`http://localhost:5000/api/ticket/edit/${taskId}`, data).then((response) => {
         if (response) {
           title.textContent = inputTitleTasckEdit.value;
           inputDescriptionEdit.value = '';
@@ -151,6 +151,6 @@ list.addEventListener('click', async (e) => {
     const data = {
       status: check.checked,
     };
-    postData(`http://localhost:10000/api/ticket/edit/${taskId}`, data);
+    postData(`http://localhost:5000/api/ticket/edit/${taskId}`, data);
   }
 });

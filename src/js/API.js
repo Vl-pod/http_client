@@ -33,17 +33,17 @@ export async function getData(url = '') {
 }
 
 export async function getAll() {
-  return getData('http://localhost:10000/api/ticket/getAll');
+  return getData('http://localhost:5000/api/ticket/getAll');
 }
 
 export async function getInfoId(id) {
-  return getData(`http://localhost:10000/api/ticket/${id}`);
+  return getData(`http://localhost:5000/api/ticket/${id}`);
 }
 
 export async function getDeleteID(id) {
-  return getData(`http://localhost:10000/api/ticket/delete/${id}`);
+  return getData(`http://localhost:5000/api/ticket/delete/${id}`);
 }
 
 export async function postEditID(id, data) {
-  return postData(`http://localhost:10000/api/ticket/edit/${id}`, data);
+  return postData(`http://localhost:5000/api/ticket/edit/${id}`, data);
 }
