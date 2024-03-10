@@ -17,7 +17,7 @@ export async function postData(url = '', data = {}) {
   return await response.json();
 }
 
-export async function getData(url = 'https://http-server-ubns.onrender.com') {
+export async function getData(url = '') {
   const response = await fetch(url, {
     method: 'GET',
     mode: 'cors',
